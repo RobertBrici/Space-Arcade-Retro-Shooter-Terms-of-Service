@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Space-Arcade-Retro-Shooter — Terms of Service</title>
+  <style>
+    :root {
+      --bg-color: #f4f6fb;
+      --surface-color: #ffffff;
+      --surface-subtle: #f8fafc;
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --accent-cyan: #0284c7;
+      --accent-magenta: #c026d3;
+      --accent-hover: #0369a1;
+      --border-color: #e2e8f0;
+      --badge-bg: #e0f2fe;
+      --badge-text: #0369a1;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #090714;
+        --surface-color: #121024;
+        --surface-subtle: #181530;
+        --text-primary: #f8fafc;
+        --text-secondary: #a5b4fc;
+        --accent-cyan: #38bdf8;
+        --accent-magenta: #e879f9;
+        --accent-hover: #7dd3fc;
+        --border-color: #262247;
+        --badge-bg: rgba(56, 189, 248, 0.12);
+        --badge-text: #38bdf8;
+        --shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 2.5rem 1rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: var(--surface-color);
+      padding: 2.75rem 3.25rem;
+      border-radius: 16px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    main::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent-cyan), var(--accent-magenta));
+    }
+
+    .brand-header {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .brand-logo {
+      width: 72px;
+      height: 72px;
+      border-radius: 16px;
+      object-fit: cover;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+      flex-shrink: 0;
+      background-color: #090714;
+    }
+
+    .brand-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .app-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--badge-text);
+      background-color: var(--badge-bg);
+      padding: 0.25rem 0.65rem;
+      border-radius: 6px;
+    }
+
+    .dev-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+
+    h1 {
+      font-size: 1.95rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      color: var(--text-primary);
+    }
+
+    .effective-date {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      margin-top: 2.35rem;
+      margin-bottom: 0.85rem;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 1.15em;
+      background: linear-gradient(180deg, var(--accent-cyan), var(--accent-magenta));
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    p {
+      color: var(--text-secondary);
+      margin-bottom: 1.1rem;
+      font-size: 0.975rem;
+    }
+
+    ul {
+      margin: 0.75rem 0 1.35rem 1.4rem;
+      color: var(--text-secondary);
+    }
+
+    li {
+      margin-bottom: 0.65rem;
+      padding-left: 0.35rem;
+      font-size: 0.975rem;
+    }
+
+    li::marker {
+      color: var(--accent-cyan);
+    }
+
+    strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: color 0.15s ease, border-color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--accent-hover);
+      border-bottom-color: var(--accent-hover);
+    }
+
+    footer {
+      margin-top: 2.75rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 1rem 0.5rem;
+      }
+
+      main {
+        padding: 1.85rem 1.35rem;
+        border-radius: 12px;
+      }
+
+      .brand-header {
+        align-items: flex-start;
+        gap: 0.95rem;
+      }
+
+      .brand-logo {
+        width: 56px;
+        height: 56px;
+        border-radius: 12px;
+      }
+
+      h1 {
+        font-size: 1.55rem;
+      }
+
+      h2 {
+        font-size: 1.15rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="brand-header">
+      <img src="logo.jpg" alt="Sticky Joystick Arcade logo" class="brand-logo" onerror="this.style.display='none'">
+      <div>
+        <div class="brand-meta">
+          <span class="app-label">Space-Arcade-Retro-Shooter</span>
+          <span class="dev-label">by Sticky Joystick Arcade</span>
+        </div>
+        <h1>Terms of Service</h1>
+      </div>
+    </header>
+    <p class="effective-date"><strong>Effective date:</strong> 2026-11-16</p>
+
+    <h2>About these terms</h2>
+    <p>
+      These Terms of Service apply to <strong>Space-Arcade-Retro-Shooter</strong>
+      (the "Game"), published on Google Play by <strong>Sticky Joystick Arcade</strong>
+      and operated by <strong>Brici Robert</strong> ("we", "us", or "our").
+      By installing or using the Game, you agree to these terms. If you do not
+      agree, do not use the Game.
+    </p>
+    <p>
+      The Game is intended for players aged 7 and older. If you are a minor,
+      your parent or legal guardian should review these terms with you and
+      supervise purchases and advertising choices. Parents and guardians are
+      responsible for a minor's use of the Game as provided by applicable law.
+    </p>
+
+    <h2>Using the Game</h2>
+    <p>
+      We grant you a limited, personal, non-exclusive, non-transferable,
+      revocable license to install and use the Game for your personal,
+      non-commercial entertainment, subject to these terms and the applicable
+      Google Play terms.
+    </p>
+    <p>You agree not to:</p>
+    <ul>
+      <li>use the Game unlawfully or interfere with its operation or security;</li>
+      <li>cheat, exploit bugs, or use unauthorized tools to gain an unfair advantage;</li>
+      <li>copy, redistribute, modify, or commercially exploit the Game except where we authorize it or applicable law permits it; or</li>
+      <li>reverse engineer or decompile the Game, except to the extent that applicable law does not allow this restriction.</li>
+    </ul>
+    <p>
+      The Game does not require an account and has no operator-run game server
+      or global leaderboard. Game progress and settings are stored locally on
+      your device. They may be lost if you clear app storage, uninstall the
+      Game, or change devices.
+    </p>
+
+    <h2>In-app purchases</h2>
+    <p>
+      The Game offers optional one-time purchases through Google Play, including
+      life upgrades and gameplay backgrounds. Product details and localized
+      prices are shown in the Google Play purchase flow before you confirm.
+      Purchases are processed by Google Play and are associated with the Google
+      account used for the transaction; we do not receive your payment-card
+      details.
+    </p>
+    <p>
+      Google Play manages payment processing, purchase history, and refund
+      requests under its terms and policies. To request a refund, use the
+      Google Play order history and refund process. Refund eligibility is
+      determined by Google Play and applicable law. Active purchases can
+      generally be restored in the Game's Shop while signed in to the Google
+      account used to purchase them. If Google Play reports that a purchase has
+      been refunded or revoked, the associated in-game benefit may be removed.
+    </p>
+    <p>
+      Deleting local Game data does not cancel a purchase or delete Google
+      Play's purchase records. Please see our
+      <a href="https://robertbrici.github.io/Space-Arcade-Retro-Shooter-Privacy-Policy/">Privacy Policy</a>
+      for information about local data and deletion.
+    </p>
+
+    <h2>Rewarded advertising</h2>
+    <p>
+      The Game may offer optional rewarded advertisements through Google Mobile
+      Ads. Ads may be unavailable, and their availability or content is
+      controlled in part by Google and your advertising privacy choices.
+      Rewards are granted only when the ad provider reports that the required
+      ad was completed. Turning off rewarded advertising does not prevent you
+      from playing the Game.
+    </p>
+    <p>
+      Google services are subject to Google's terms and privacy practices.
+      Details about advertising, consent choices, and data handling are
+      described in our <a href="https://robertbrici.github.io/Space-Arcade-Retro-Shooter-Privacy-Policy/">Privacy Policy</a>.
+    </p>
+
+    <h2>Game content and updates</h2>
+    <p>
+      The Game and its software, design, text, graphics, and audio are owned by
+      or licensed to us, except for third-party materials and services, and
+      are protected by applicable intellectual-property laws. These terms do
+      not transfer ownership to you.
+    </p>
+    <p>
+      We may update, change, suspend, or discontinue parts of the Game for
+      maintenance, security, legal, or operational reasons. We do not promise
+      that every feature will always be available or that progress will be
+      preserved. This does not limit any rights you have under applicable
+      consumer-protection law.
+    </p>
+
+    <h2>Disclaimer and liability</h2>
+    <p>
+      To the extent permitted by law, the Game is provided on an "as available"
+      basis, and we do not guarantee uninterrupted or error-free operation.
+      Nothing in these terms excludes or limits consumer rights or other
+      liability that cannot lawfully be excluded or limited. Where the law
+      permits, we are not liable for indirect or consequential loss arising
+      from use of the Game.
+    </p>
+
+    <h2>Changes to these terms</h2>
+    <p>
+      We may update these terms when the Game or applicable requirements
+      change. The updated version will be posted at this URL with a revised
+      effective date. Changes apply from the date shown, subject to any notice
+      or consent required by law. Continued use after an update means you
+      accept the revised terms to the extent permitted by law.
+    </p>
+
+    <h2>Applicable law and contact</h2>
+    <p>
+      These terms are subject to applicable law. If you are a consumer, any
+      mandatory consumer protections and rights available in your country of
+      residence continue to apply, including rules about which courts may hear
+      a dispute.
+    </p>
+    <p>
+      For questions about these terms, contact <strong>Brici Robert</strong> at
+      <a href="mailto:robert.brici@outlook.com">robert.brici@outlook.com</a>.
+    </p>
+
+    <footer>
+      <span>Space-Arcade-Retro-Shooter</span>
+      <span>Sticky Joystick Arcade &bull; Operated by Brici Robert</span>
+    </footer>
+  </main>
+</body>
+</html>
