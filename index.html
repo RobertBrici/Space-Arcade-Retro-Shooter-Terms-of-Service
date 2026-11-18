@@ -1,10 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Space-Arcade-Retro-Shooter — Terms of Service</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Space-Arcade-Retro-Shooter — Terms of Service</title>
+<style>
     :root {
       --bg-color: #f4f6fb;
       --surface-color: #ffffff;
@@ -235,60 +236,78 @@
         font-size: 1.15rem;
       }
     }
-  </style>
+  
+/* WCAG 2.2-oriented accessibility enhancements */
+:root { --accent-cyan:#075985; --accent-hover:#0c4a6e; --badge-text:#075985; }
+@media (prefers-color-scheme:dark) { :root { --text-secondary:#cbd5e1; --accent-cyan:#7dd3fc; --accent-hover:#bae6fd; --badge-text:#7dd3fc; } }
+html { scroll-behavior:auto; } body { padding-top:1.25rem; }
+main { overflow:visible; }
+a { text-decoration:underline; text-underline-offset:.15em; border-bottom:0; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+a:focus-visible, select:focus-visible, .skip-link:focus-visible { outline:3px solid var(--accent-magenta); outline-offset:3px; border-radius:3px; }
+.skip-link { position:absolute; left:1rem; top:-8rem; z-index:10; padding:.65rem 1rem; background:var(--surface-color); color:var(--text-primary); border:2px solid var(--accent-cyan); }
+.skip-link:focus { top:.5rem; }
+.page-tools { display:flex; justify-content:flex-end; margin-bottom:1.5rem; }
+.language-control { display:flex; flex-wrap:wrap; align-items:center; gap:.65rem; }
+.language-control label { font-size:.9rem; font-weight:650; color:var(--text-primary); }
+.language-control select { min-height:44px; min-width:148px; max-width:100%; padding:.55rem 2rem .55rem .75rem; border:2px solid var(--text-secondary); border-radius:8px; color:var(--text-primary); background:var(--surface-color); font:inherit; cursor:pointer; }
+.brand-header { flex-wrap:wrap; }
+.brand-header > div { min-width:0; flex:1 1 180px; }
+h1, h2 { overflow-wrap:anywhere; }
+@media(max-width:640px) { .page-tools { margin-bottom:1.2rem; } .language-control { width:100%; justify-content:flex-end; } }
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important; transition-duration:.01ms!important; scroll-behavior:auto!important; } }
+@media(forced-colors:active) { a { color:LinkText; } select { border:2px solid ButtonText; } h2::before, main::before { background:CanvasText; } }
+</style>
 </head>
-<body>
-  <main>
-    <header class="brand-header">
-      <img src="logo.jpg" alt="Sticky Joystick Arcade logo" class="brand-logo" onerror="this.style.display='none'">
-      <div>
-        <div class="brand-meta">
-          <span class="app-label">Space-Arcade-Retro-Shooter</span>
-          <span class="dev-label">by Sticky Joystick Arcade</span>
-        </div>
-        <h1>Terms of Service</h1>
-      </div>
-    </header>
-    <p class="effective-date"><strong>Effective date:</strong> 2026-11-16</p>
-
-    <h2>About these terms</h2>
-    <p>
+<body><a class="skip-link" href="#main-content" id="skip-link">Skip to main content</a>
+<main aria-label="Legal information" aria-labelledby="page-title" id="main-content" tabindex="-1"><div class="page-tools"><div class="language-control"><label for="language-select" id="language-label">Page language</label><select aria-labelledby="language-label" autocomplete="off" id="language-select"><option value="en">English</option><option value="fr">Français</option><option value="es">Español</option><option value="pt">Português</option><option value="de">Deutsch</option></select></div></div>
+<header class="brand-header">
+<img data-testid="brand-logo" alt="Sticky Joystick Arcade logo" class="brand-logo" onerror="this.style.display='none'" src="logo.png"/>
+<div>
+<div class="brand-meta">
+<span class="app-label">Space-Arcade-Retro-Shooter</span>
+<span class="dev-label" id="by-label">by Sticky Joystick Arcade</span>
+</div>
+<h1 id="page-title">Terms of Service</h1>
+</div>
+</header>
+<p class="effective-date" data-translate-index="0"><strong>Effective date:</strong> 2026-11-18</p>
+<h2 data-translate-index="1" id="section-1">About these terms</h2>
+<p data-translate-index="2">
       These Terms of Service apply to <strong>Space-Arcade-Retro-Shooter</strong>
       (the "Game"), published on Google Play by <strong>Sticky Joystick Arcade</strong>
       and operated by <strong>Brici Robert</strong> ("we", "us", or "our").
       By installing or using the Game, you agree to these terms. If you do not
       agree, do not use the Game.
     </p>
-    <p>
-      The Game is intended for players aged 7 and older. If you are a minor,
+<p data-translate-index="3">
+      The Game is intended for players aged 13 and older. If you are a minor,
       your parent or legal guardian should review these terms with you and
       supervise purchases and advertising choices. Parents and guardians are
       responsible for a minor's use of the Game as provided by applicable law.
     </p>
-
-    <h2>Using the Game</h2>
-    <p>
+<h2 data-translate-index="4" id="section-4">Using the Game</h2>
+<p data-translate-index="5">
       We grant you a limited, personal, non-exclusive, non-transferable,
       revocable license to install and use the Game for your personal,
       non-commercial entertainment, subject to these terms and the applicable
       Google Play terms.
     </p>
-    <p>You agree not to:</p>
-    <ul>
-      <li>use the Game unlawfully or interfere with its operation or security;</li>
-      <li>cheat, exploit bugs, or use unauthorized tools to gain an unfair advantage;</li>
-      <li>copy, redistribute, modify, or commercially exploit the Game except where we authorize it or applicable law permits it; or</li>
-      <li>reverse engineer or decompile the Game, except to the extent that applicable law does not allow this restriction.</li>
-    </ul>
-    <p>
+<p data-translate-index="6">You agree not to:</p>
+<ul>
+<li data-translate-index="7">use the Game unlawfully or interfere with its operation or security;</li>
+<li data-translate-index="8">cheat, exploit bugs, or use unauthorized tools to gain an unfair advantage;</li>
+<li data-translate-index="9">copy, redistribute, modify, or commercially exploit the Game except where we authorize it or applicable law permits it; or</li>
+<li data-translate-index="10">reverse engineer or decompile the Game, except to the extent that applicable law does not allow this restriction.</li>
+</ul>
+<p data-translate-index="11">
       The Game does not require an account and has no operator-run game server
       or global leaderboard. Game progress and settings are stored locally on
       your device. They may be lost if you clear app storage, uninstall the
       Game, or change devices.
     </p>
-
-    <h2>In-app purchases</h2>
-    <p>
+<h2 data-translate-index="12" id="section-12">In-app purchases</h2>
+<p data-translate-index="13">
       The Game offers optional one-time purchases through Google Play, including
       life upgrades and gameplay backgrounds. Product details and localized
       prices are shown in the Google Play purchase flow before you confirm.
@@ -296,7 +315,14 @@
       account used for the transaction; we do not receive your payment-card
       details.
     </p>
-    <p>
+<p data-translate-index="14">
+      Life upgrades apply automatically. When a newly acquired 10-life or
+      15-life tier raises your current maximum, your available lives are
+      immediately filled to that maximum. Restoring an already active tier
+      does not refill spent lives. Infinite Lives removes the life limit and
+      life loss.
+    </p>
+<p data-translate-index="15">
       Google Play manages payment processing, purchase history, and refund
       requests under its terms and policies. To request a refund, use the
       Google Play order history and refund process. Refund eligibility is
@@ -305,15 +331,14 @@
       account used to purchase them. If Google Play reports that a purchase has
       been refunded or revoked, the associated in-game benefit may be removed.
     </p>
-    <p>
+<p data-translate-index="16">
       Deleting local Game data does not cancel a purchase or delete Google
       Play's purchase records. Please see our
       <a href="https://robertbrici.github.io/Space-Arcade-Retro-Shooter-Privacy-Policy/">Privacy Policy</a>
       for information about local data and deletion.
     </p>
-
-    <h2>Rewarded advertising</h2>
-    <p>
+<h2 data-translate-index="17" id="section-17">Rewarded advertising</h2>
+<p data-translate-index="18">
       The Game may offer optional rewarded advertisements through Google Mobile
       Ads. Ads may be unavailable, and their availability or content is
       controlled in part by Google and your advertising privacy choices.
@@ -321,29 +346,27 @@
       ad was completed. Turning off rewarded advertising does not prevent you
       from playing the Game.
     </p>
-    <p>
+<p data-translate-index="19">
       Google services are subject to Google's terms and privacy practices.
       Details about advertising, consent choices, and data handling are
       described in our <a href="https://robertbrici.github.io/Space-Arcade-Retro-Shooter-Privacy-Policy/">Privacy Policy</a>.
     </p>
-
-    <h2>Game content and updates</h2>
-    <p>
+<h2 data-translate-index="20" id="section-20">Game content and updates</h2>
+<p data-translate-index="21">
       The Game and its software, design, text, graphics, and audio are owned by
       or licensed to us, except for third-party materials and services, and
       are protected by applicable intellectual-property laws. These terms do
       not transfer ownership to you.
     </p>
-    <p>
+<p data-translate-index="22">
       We may update, change, suspend, or discontinue parts of the Game for
       maintenance, security, legal, or operational reasons. We do not promise
       that every feature will always be available or that progress will be
       preserved. This does not limit any rights you have under applicable
       consumer-protection law.
     </p>
-
-    <h2>Disclaimer and liability</h2>
-    <p>
+<h2 data-translate-index="23" id="section-23">Disclaimer and liability</h2>
+<p data-translate-index="24">
       To the extent permitted by law, the Game is provided on an "as available"
       basis, and we do not guarantee uninterrupted or error-free operation.
       Nothing in these terms excludes or limits consumer rights or other
@@ -351,32 +374,60 @@
       permits, we are not liable for indirect or consequential loss arising
       from use of the Game.
     </p>
-
-    <h2>Changes to these terms</h2>
-    <p>
+<h2 data-translate-index="25" id="section-25">Changes to these terms</h2>
+<p data-translate-index="26">
       We may update these terms when the Game or applicable requirements
       change. The updated version will be posted at this URL with a revised
       effective date. Changes apply from the date shown, subject to any notice
       or consent required by law. Continued use after an update means you
       accept the revised terms to the extent permitted by law.
     </p>
-
-    <h2>Applicable law and contact</h2>
-    <p>
+<h2 data-translate-index="27" id="section-27">Applicable law and contact</h2>
+<p data-translate-index="28">
       These terms are subject to applicable law. If you are a consumer, any
       mandatory consumer protections and rights available in your country of
       residence continue to apply, including rules about which courts may hear
       a dispute.
     </p>
-    <p>
+<p data-translate-index="29">
       For questions about these terms, contact <strong>Brici Robert</strong> at
       <a href="mailto:robert.brici@outlook.com">robert.brici@outlook.com</a>.
     </p>
-
-    <footer>
-      <span>Space-Arcade-Retro-Shooter</span>
-      <span>Sticky Joystick Arcade &bull; Operated by Brici Robert</span>
-    </footer>
-  </main>
-</body>
+<footer>
+<span>Space-Arcade-Retro-Shooter</span>
+<span id="footer-operator">Sticky Joystick Arcade • Operated by Brici Robert</span>
+</footer>
+</main>
+<script id="translations" type="application/json">{"content": {"en": ["\u003cstrong>Effective date:\u003c/strong> 2026-11-18", "About these terms", "These Terms of Service apply to \u003cstrong>Space-Arcade-Retro-Shooter\u003c/strong>\n      (the \"Game\"), published on Google Play by \u003cstrong>Sticky Joystick Arcade\u003c/strong>\n      and operated by \u003cstrong>Brici Robert\u003c/strong> (\"we\", \"us\", or \"our\").\n      By installing or using the Game, you agree to these terms. If you do not\n      agree, do not use the Game.", "The Game is intended for players aged 13 and older. If you are a minor,\n      your parent or legal guardian should review these terms with you and\n      supervise purchases and advertising choices. Parents and guardians are\n      responsible for a minor's use of the Game as provided by applicable law.", "Using the Game", "We grant you a limited, personal, non-exclusive, non-transferable,\n      revocable license to install and use the Game for your personal,\n      non-commercial entertainment, subject to these terms and the applicable\n      Google Play terms.", "You agree not to:", "use the Game unlawfully or interfere with its operation or security;", "cheat, exploit bugs, or use unauthorized tools to gain an unfair advantage;", "copy, redistribute, modify, or commercially exploit the Game except where we authorize it or applicable law permits it; or", "reverse engineer or decompile the Game, except to the extent that applicable law does not allow this restriction.", "The Game does not require an account and has no operator-run game server\n      or global leaderboard. Game progress and settings are stored locally on\n      your device. They may be lost if you clear app storage, uninstall the\n      Game, or change devices.", "In-app purchases", "The Game offers optional one-time purchases through Google Play, including\n      life upgrades and gameplay backgrounds. Product details and localized\n      prices are shown in the Google Play purchase flow before you confirm.\n      Purchases are processed by Google Play and are associated with the Google\n      account used for the transaction; we do not receive your payment-card\n      details.", "Life upgrades apply automatically. When a newly acquired 10-life or\n      15-life tier raises your current maximum, your available lives are\n      immediately filled to that maximum. Restoring an already active tier\n      does not refill spent lives. Infinite Lives removes the life limit and\n      life loss.", "Google Play manages payment processing, purchase history, and refund\n      requests under its terms and policies. To request a refund, use the\n      Google Play order history and refund process. Refund eligibility is\n      determined by Google Play and applicable law. Active purchases can\n      generally be restored in the Game's Shop while signed in to the Google\n      account used to purchase them. If Google Play reports that a purchase has\n      been refunded or revoked, the associated in-game benefit may be removed.", "Deleting local Game data does not cancel a purchase or delete Google\n      Play's purchase records. Please see our\n      \u003ca href=\"https://robertbrici.github.io/Space-Arcade-Retro-Shooter-Privacy-Policy/\">Privacy Policy\u003c/a>\n      for information about local data and deletion.", "Rewarded advertising", "The Game may offer optional rewarded advertisements through Google Mobile\n      Ads. Ads may be unavailable, and their availability or content is\n      controlled in part by Google and your advertising privacy choices.\n      Rewards are granted only when the ad provider reports that the required\n      ad was completed. Turning off rewarded advertising does not prevent you\n      from playing the Game.", "Google services are subject to Google's terms and privacy practices.\n      Details about advertising, consent choices, and data handling are\n      described in our \u003ca href=\"https://robertbrici.github.io/Space-Arcade-Retro-Shooter-Privacy-Policy/\">Privacy Policy\u003c/a>.", "Game content and updates", "The Game and its software, design, text, graphics, and audio are owned by\n      or licensed to us, except for third-party materials and services, and\n      are protected by applicable intellectual-property laws. These terms do\n      not transfer ownership to you.", "We may update, change, suspend, or discontinue parts of the Game for\n      maintenance, security, legal, or operational reasons. We do not promise\n      that every feature will always be available or that progress will be\n      preserved. This does not limit any rights you have under applicable\n      consumer-protection law.", "Disclaimer and liability", "To the extent permitted by law, the Game is provided on an \"as available\"\n      basis, and we do not guarantee uninterrupted or error-free operation.\n      Nothing in these terms excludes or limits consumer rights or other\n      liability that cannot lawfully be excluded or limited. Where the law\n      permits, we are not liable for indirect or consequential loss arising\n      from use of the Game.", "Changes to these terms", "We may update these terms when the Game or applicable requirements\n      change. The updated version will be posted at this URL with a revised\n      effective date. Changes apply from the date shown, subject to any notice\n      or consent required by law. Continued use after an update means you\n      accept the revised terms to the extent permitted by law.", "Applicable law and contact", "These terms are subject to applicable law. If you are a consumer, any\n      mandatory consumer protections and rights available in your country of\n      residence continue to apply, including rules about which courts may hear\n      a dispute.", "For questions about these terms, contact \u003cstrong>Brici Robert\u003c/strong> at\n      \u003ca href=\"mailto:robert.brici@outlook.com\">robert.brici@outlook.com\u003c/a>."], "fr": ["Date d’entrée en vigueur : 18/11/2026", "À propos de ces conditions", "Les présentes Conditions d’utilisation s’appliquent à Space-Arcade-Retro-Shooter (le « Jeu »), publié sur Google Play par Sticky Joystick Arcade et exploité par Brici Robert (« nous », « notre », « nos »). En installant ou en utilisant le Jeu, vous acceptez ces conditions. Si vous ne les acceptez pas, n’utilisez pas le Jeu.", "Le Jeu s’adresse aux personnes de 13 ans et plus. Si vous êtes mineur, votre parent ou représentant légal doit examiner ces conditions avec vous et superviser les achats et les choix publicitaires. Les parents et tuteurs sont responsables de l’utilisation du Jeu par un mineur dans les limites prévues par la loi applicable.", "Utilisation du Jeu", "Nous vous accordons une licence limitée, personnelle, non exclusive, non transférable et révocable pour installer et utiliser le Jeu à des fins de divertissement personnel et non commercial, sous réserve de ces conditions et des conditions Google Play applicables.", "Vous acceptez de ne pas :", "utiliser le Jeu illégalement ni perturber son fonctionnement ou sa sécurité ;", " tricher, exploiter des bogues ou utiliser des outils non autorisés pour obtenir un avantage déloyal ;", "copier, redistribuer, modifier ou exploiter commercialement le Jeu, sauf autorisation de notre part ou permission de la loi applicable ;", "procéder à l’ingénierie inverse ou décompiler le Jeu, sauf lorsque la loi applicable interdit une telle restriction.", "Le Jeu ne nécessite aucun compte et ne dispose ni d’un serveur de jeu exploité par l’éditeur ni d’un classement mondial. La progression et les paramètres sont conservés localement sur votre appareil. Ils peuvent être perdus si vous effacez les données de l’application, désinstallez le Jeu ou changez d’appareil.", "Achats intégrés", "Le Jeu propose des achats uniques facultatifs via Google Play, notamment des améliorations de vies et des décors de jeu. Les détails des produits et les prix locaux apparaissent dans le parcours d’achat Google Play avant confirmation. Les achats sont traités par Google Play et associés au compte Google utilisé ; nous ne recevons pas vos données de carte bancaire.", "Les améliorations de vies s’appliquent automatiquement. Lorsqu’un nouveau palier de 10 ou 15 vies augmente votre maximum, vos vies disponibles sont immédiatement remplies jusqu’à ce maximum. Restaurer un palier déjà actif ne recharge pas les vies dépensées. « Vies infinies » supprime la limite et la perte de vies.", "Google Play gère les paiements, l’historique des achats et les demandes de remboursement selon ses conditions. Pour demander un remboursement, utilisez l’historique des commandes et la procédure Google Play. L’éligibilité dépend de Google Play et de la loi applicable. Les achats actifs peuvent généralement être restaurés dans la Boutique du Jeu avec le compte Google utilisé pour les effectuer. Si Google Play indique qu’un achat a été remboursé ou révoqué, l’avantage correspondant peut être retiré.", "Supprimer les données locales du Jeu n’annule pas un achat et n’efface pas les registres de Google Play. Consultez notre [[privacy]] pour en savoir plus sur les données locales et leur suppression.", "Publicités récompensées", "Le Jeu peut proposer des publicités récompensées facultatives via Google Mobile Ads. Elles peuvent être indisponibles ; leur disponibilité et leur contenu dépendent en partie de Google et de vos choix de confidentialité publicitaire. Les récompenses ne sont accordées que lorsque le fournisseur confirme que la publicité requise a été visionnée jusqu’au bout. Désactiver ces publicités ne vous empêche pas de jouer.", "Les services Google sont soumis aux conditions et pratiques de confidentialité de Google. Les informations sur la publicité, le consentement et le traitement des données figurent dans notre [[privacy]].", "Contenu du Jeu et mises à jour", "Le Jeu et ses logiciels, sa conception, ses textes, ses graphismes et ses sons nous appartiennent ou nous sont concédés sous licence, à l’exception des éléments et services tiers, et sont protégés par les lois applicables sur la propriété intellectuelle. Ces conditions ne vous transfèrent aucun droit de propriété.", "Nous pouvons mettre à jour, modifier, suspendre ou arrêter certaines parties du Jeu pour des raisons de maintenance, de sécurité, juridiques ou opérationnelles. Nous ne garantissons ni la disponibilité permanente de chaque fonctionnalité ni la conservation de la progression. Cela ne limite pas vos droits au titre des lois applicables sur la protection des consommateurs.", "Exclusions de garantie et responsabilité", "Dans les limites autorisées par la loi, le Jeu est fourni « selon disponibilité » et nous ne garantissons pas un fonctionnement continu ou sans erreur. Aucune disposition n’exclut ni ne limite les droits des consommateurs ou une responsabilité qui ne peut légalement être exclue ou limitée. Lorsque la loi le permet, nous ne répondons pas des pertes indirectes ou consécutives à l’utilisation du Jeu.", "Modification des conditions", "Nous pouvons modifier ces conditions lorsque le Jeu ou les exigences applicables changent. La version mise à jour sera publiée à cette adresse avec une nouvelle date d’entrée en vigueur. Les changements s’appliquent à la date indiquée, sous réserve de toute notification ou autorisation légalement requise. La poursuite de l’utilisation après une mise à jour vaut acceptation des conditions révisées dans les limites permises par la loi.", "Droit applicable et contact", "Ces conditions sont soumises à la loi applicable. Si vous êtes consommateur, les protections et droits impératifs de votre pays de résidence continuent de s’appliquer, y compris les règles déterminant les tribunaux compétents en cas de litige.", "Pour toute question sur ces conditions, contactez Brici Robert à [[email]]."], "es": ["Fecha de entrada en vigor: 18/11/2026", "Acerca de estas condiciones", "Estas Condiciones de servicio se aplican a Space-Arcade-Retro-Shooter (el «Juego»), publicado en Google Play por Sticky Joystick Arcade y operado por Brici Robert («nosotros»). Al instalar o utilizar el Juego, acepta estas condiciones. Si no está de acuerdo, no utilice el Juego.", "El Juego está destinado a personas de 13 años o más. Si es menor de edad, su padre, madre o tutor legal debe revisar estas condiciones con usted y supervisar las compras y las opciones publicitarias. Los progenitores y tutores son responsables del uso del Juego por parte de menores según la legislación aplicable.", "Uso del Juego", "Le concedemos una licencia limitada, personal, no exclusiva, intransferible y revocable para instalar y utilizar el Juego con fines de entretenimiento personal y no comercial, sujeta a estas condiciones y a las condiciones aplicables de Google Play.", "Se compromete a no:", "utilizar el Juego de forma ilegal ni interferir en su funcionamiento o seguridad;", "hacer trampas, aprovechar errores o usar herramientas no autorizadas para obtener ventajas injustas;", "copiar, redistribuir, modificar o explotar comercialmente el Juego, salvo autorización nuestra o permiso de la legislación aplicable; o", "realizar ingeniería inversa o descompilar el Juego, salvo cuando la legislación aplicable no permita esta restricción.", "El Juego no requiere cuenta y no tiene un servidor de juego operado por nosotros ni clasificación global. El progreso y los ajustes se almacenan localmente en su dispositivo. Pueden perderse si borra los datos de la aplicación, desinstala el Juego o cambia de dispositivo.", "Compras dentro de la aplicación", "El Juego ofrece compras únicas opcionales mediante Google Play, incluidas mejoras de vidas y fondos de juego. Los detalles de los productos y los precios locales aparecen en el proceso de compra de Google Play antes de confirmar. Google Play procesa las compras y las asocia a la cuenta de Google utilizada; no recibimos los datos de su tarjeta de pago.", "Las mejoras de vidas se aplican automáticamente. Cuando un nuevo nivel de 10 o 15 vidas aumenta su máximo actual, las vidas disponibles se rellenan de inmediato hasta ese máximo. Restaurar un nivel ya activo no repone las vidas gastadas. «Vidas infinitas» elimina el límite y la pérdida de vidas.", "Google Play gestiona los pagos, el historial de compras y las solicitudes de reembolso según sus condiciones y políticas. Para solicitar un reembolso, utilice el historial de pedidos y el procedimiento de Google Play. La elegibilidad depende de Google Play y de la ley aplicable. Por lo general, las compras activas pueden restaurarse desde la Tienda del Juego con la cuenta de Google utilizada. Si Google Play indica que una compra fue reembolsada o revocada, puede retirarse la ventaja correspondiente.", "Eliminar los datos locales del Juego no cancela las compras ni borra los registros de Google Play. Consulte nuestra [[privacy]] para conocer el tratamiento y la eliminación de los datos locales.", "Publicidad recompensada", "El Juego puede ofrecer anuncios recompensados opcionales mediante Google Mobile Ads. Es posible que no estén disponibles; su disponibilidad y contenido dependen en parte de Google y de sus opciones de privacidad publicitaria. Las recompensas solo se conceden cuando el proveedor confirma que se completó el anuncio requerido. Desactivar estos anuncios no impide jugar.", "Los servicios de Google están sujetos a sus condiciones y prácticas de privacidad. Nuestra [[privacy]] explica la publicidad, las opciones de consentimiento y el tratamiento de datos.", "Contenido y actualizaciones del Juego", "El Juego y su software, diseño, textos, gráficos y audio son de nuestra propiedad o se nos conceden bajo licencia, excepto los materiales y servicios de terceros, y están protegidos por las leyes aplicables de propiedad intelectual. Estas condiciones no le transfieren su titularidad.", "Podemos actualizar, modificar, suspender o interrumpir partes del Juego por motivos de mantenimiento, seguridad, legales u operativos. No garantizamos que todas las funciones estén siempre disponibles ni que se conserve el progreso. Esto no limita sus derechos conforme a la legislación de protección del consumidor aplicable.", "Exención de garantías y responsabilidad", "En la medida permitida por la ley, el Juego se ofrece «según disponibilidad» y no garantizamos un funcionamiento ininterrumpido o libre de errores. Nada de estas condiciones excluye o limita derechos de los consumidores u otras responsabilidades que legalmente no puedan excluirse o limitarse. Cuando la ley lo permita, no respondemos por pérdidas indirectas o consecuentes derivadas del uso del Juego.", "Cambios en estas condiciones", "Podemos actualizar estas condiciones cuando cambien el Juego o los requisitos aplicables. La versión actualizada se publicará en esta dirección con una fecha de entrada en vigor revisada. Los cambios se aplicarán desde la fecha indicada, sujetos a cualquier notificación o consentimiento exigido por ley. Continuar utilizando el Juego después de una actualización implica aceptar las condiciones revisadas en la medida permitida por la ley.", "Legislación aplicable y contacto", "Estas condiciones se rigen por la legislación aplicable. Si es consumidor, seguirán aplicándose las protecciones y derechos obligatorios de su país de residencia, incluidas las normas sobre qué tribunales pueden resolver una disputa.", "Para consultas sobre estas condiciones, contacte con Brici Robert en [[email]]."], "pt": ["Data de entrada em vigor: 18/11/2026", "Sobre estes termos", "Estes Termos de Serviço aplicam-se ao Space-Arcade-Retro-Shooter (o «Jogo»), publicado no Google Play pela Sticky Joystick Arcade e operado por Brici Robert («nós»). Ao instalar ou utilizar o Jogo, aceita estes termos. Se não concordar, não utilize o Jogo.", "O Jogo destina-se a pessoas com 13 anos ou mais. Se for menor, o seu progenitor ou tutor legal deve analisar estes termos consigo e supervisionar as compras e opções de publicidade. Os pais e tutores são responsáveis pela utilização do Jogo por menores nos termos da lei aplicável.", "Utilização do Jogo", "Concedemos-lhe uma licença limitada, pessoal, não exclusiva, intransmissível e revogável para instalar e utilizar o Jogo para entretenimento pessoal e não comercial, sujeita a estes termos e aos termos aplicáveis do Google Play.", "Compromete-se a não:", "utilizar o Jogo ilegalmente ou interferir com o seu funcionamento ou segurança;", "fazer batota, explorar falhas ou utilizar ferramentas não autorizadas para obter uma vantagem injusta;", "copiar, redistribuir, modificar ou explorar comercialmente o Jogo, exceto com a nossa autorização ou quando permitido por lei; ou", "efetuar engenharia inversa ou descompilar o Jogo, exceto quando a lei aplicável não permitir esta restrição.", "O Jogo não exige conta e não possui servidor de jogo operado por nós nem classificação global. O progresso e as definições são guardados localmente no dispositivo. Podem perder-se se limpar os dados da aplicação, desinstalar o Jogo ou mudar de dispositivo.", "Compras na aplicação", "O Jogo disponibiliza compras únicas facultativas através do Google Play, incluindo melhorias de vidas e cenários de jogo. Os detalhes dos produtos e preços locais são apresentados no processo de compra do Google Play antes da confirmação. As compras são processadas pelo Google Play e associadas à conta Google utilizada; não recebemos os dados do seu cartão de pagamento.", "As melhorias de vidas são aplicadas automaticamente. Quando um novo nível de 10 ou 15 vidas aumenta o máximo atual, as vidas disponíveis são imediatamente preenchidas até esse máximo. Restaurar um nível já ativo não repõe vidas gastas. «Vidas infinitas» elimina o limite e a perda de vidas.", "O Google Play gere pagamentos, histórico de compras e pedidos de reembolso segundo os seus termos e políticas. Para pedir um reembolso, utilize o histórico de encomendas e o processo do Google Play. A elegibilidade é determinada pelo Google Play e pela lei aplicável. Geralmente, as compras ativas podem ser restauradas na Loja do Jogo com a conta Google usada na compra. Se o Google Play indicar que uma compra foi reembolsada ou revogada, o benefício correspondente pode ser removido.", "Eliminar os dados locais do Jogo não cancela uma compra nem apaga os registos do Google Play. Consulte a nossa [[privacy]] para informações sobre dados locais e eliminação.", "Publicidade com recompensa", "O Jogo pode disponibilizar anúncios facultativos com recompensa através do Google Mobile Ads. Os anúncios podem estar indisponíveis e a sua disponibilidade ou conteúdo depende em parte da Google e das suas opções de privacidade publicitária. As recompensas só são atribuídas quando o fornecedor confirma que o anúncio exigido foi concluído. Desativar os anúncios com recompensa não impede de jogar.", "Os serviços Google estão sujeitos aos termos e práticas de privacidade da Google. A nossa [[privacy]] descreve a publicidade, as opções de consentimento e o tratamento de dados.", "Conteúdo do Jogo e atualizações", "O Jogo e o respetivo software, design, texto, gráficos e áudio pertencem-nos ou são-nos licenciados, exceto materiais e serviços de terceiros, e estão protegidos pelas leis aplicáveis de propriedade intelectual. Estes termos não transferem a titularidade para si.", "Podemos atualizar, alterar, suspender ou descontinuar partes do Jogo por razões de manutenção, segurança, legais ou operacionais. Não garantimos que todas as funcionalidades estejam sempre disponíveis nem que o progresso seja preservado. Isto não limita os seus direitos ao abrigo da legislação aplicável de proteção dos consumidores.", "Exclusão de garantias e responsabilidade", "Na medida permitida por lei, o Jogo é disponibilizado «conforme a disponibilidade», sem garantia de funcionamento ininterrupto ou isento de erros. Nada nestes termos exclui ou limita direitos dos consumidores ou responsabilidades que não possam legalmente ser excluídos ou limitados. Quando a lei o permitir, não somos responsáveis por perdas indiretas ou consequenciais decorrentes da utilização do Jogo.", "Alterações a estes termos", "Podemos atualizar estes termos quando o Jogo ou os requisitos aplicáveis mudarem. A versão atualizada será publicada neste endereço com uma data de entrada em vigor revista. As alterações aplicam-se a partir da data indicada, sujeitas aos avisos ou consentimentos exigidos por lei. A continuação da utilização após uma atualização significa aceitação dos termos revistos, na medida permitida por lei.", "Lei aplicável e contacto", "Estes termos estão sujeitos à lei aplicável. Se for consumidor, continuam a aplicar-se as proteções e os direitos obrigatórios do seu país de residência, incluindo as regras sobre os tribunais competentes para litígios.", "Para questões sobre estes termos, contacte Brici Robert através de [[email]]."], "de": ["Gültig ab: 18.11.2026", "Über diese Nutzungsbedingungen", "Diese Nutzungsbedingungen gelten für Space-Arcade-Retro-Shooter (das „Spiel“), das von Sticky Joystick Arcade bei Google Play veröffentlicht und von Brici Robert betrieben wird („wir“, „uns“). Durch Installation oder Nutzung des Spiels stimmen Sie diesen Bedingungen zu. Wenn Sie nicht zustimmen, nutzen Sie das Spiel nicht.", "Das Spiel richtet sich an Personen ab 13 Jahren. Minderjährige sollten diese Bedingungen gemeinsam mit Eltern oder Erziehungsberechtigten lesen; diese sollten Käufe und Werbeentscheidungen beaufsichtigen. Eltern und Erziehungsberechtigte sind im Rahmen des geltenden Rechts für die Nutzung durch Minderjährige verantwortlich.", "Nutzung des Spiels", "Wir gewähren Ihnen eine beschränkte, persönliche, nicht ausschließliche, nicht übertragbare und widerrufliche Lizenz, das Spiel zu privaten, nicht kommerziellen Unterhaltungszwecken zu installieren und zu nutzen, vorbehaltlich dieser Bedingungen und der geltenden Google-Play-Bedingungen.", "Sie verpflichten sich, Folgendes zu unterlassen:", "das Spiel rechtswidrig zu nutzen oder seinen Betrieb bzw. seine Sicherheit zu beeinträchtigen;", "zu betrügen, Fehler auszunutzen oder unerlaubte Hilfsmittel für einen unfairen Vorteil einzusetzen;", "das Spiel zu kopieren, weiterzuverbreiten, zu verändern oder kommerziell zu verwerten, sofern wir dies nicht gestatten oder geltendes Recht es erlaubt; oder", "das Spiel zurückzuentwickeln oder zu dekompilieren, soweit geltendes Recht eine solche Beschränkung zulässt.", "Das Spiel erfordert kein Konto und besitzt weder einen vom Betreiber betriebenen Spielserver noch eine globale Bestenliste. Spielfortschritt und Einstellungen werden lokal auf Ihrem Gerät gespeichert. Sie können verloren gehen, wenn Sie App-Daten löschen, das Spiel deinstallieren oder das Gerät wechseln.", "In-App-Käufe", "Das Spiel bietet freiwillige einmalige Käufe über Google Play, darunter Verbesserungen der Leben und Spielhintergründe. Produktdetails und lokale Preise werden vor der Bestätigung im Google-Play-Kaufvorgang angezeigt. Käufe werden von Google Play abgewickelt und dem verwendeten Google-Konto zugeordnet; wir erhalten keine Zahlungskartendaten.", "Lebensverbesserungen werden automatisch angewendet. Wenn eine neu erworbene Stufe mit 10 oder 15 Leben Ihr bisheriges Maximum erhöht, werden die verfügbaren Leben sofort bis zum neuen Maximum aufgefüllt. Die Wiederherstellung einer bereits aktiven Stufe füllt verbrauchte Leben nicht auf. „Unendliche Leben“ hebt die Lebensbegrenzung und den Verlust von Leben auf.", "Google Play verwaltet Zahlungen, Kaufhistorie und Erstattungsanträge gemäß seinen Bedingungen und Richtlinien. Für eine Erstattung nutzen Sie die Bestellhistorie und das Erstattungsverfahren von Google Play. Die Berechtigung richtet sich nach Google Play und geltendem Recht. Aktive Käufe lassen sich im Shop des Spiels in der Regel mit dem ursprünglichen Google-Konto wiederherstellen. Meldet Google Play einen erstatteten oder widerrufenen Kauf, kann der zugehörige Spielvorteil entfallen.", "Das Löschen lokaler Spieldaten storniert keine Käufe und löscht keine Kaufdaten bei Google Play. Weitere Informationen zu lokalen Daten und deren Löschung finden Sie in unserer [[privacy]].", "Belohnte Werbung", "Das Spiel kann freiwillige belohnte Anzeigen über Google Mobile Ads anbieten. Anzeigen können nicht verfügbar sein; Verfügbarkeit und Inhalt hängen teilweise von Google und Ihren Datenschutzentscheidungen ab. Belohnungen werden nur gewährt, wenn der Anzeigenanbieter den vollständigen Abschluss der erforderlichen Anzeige bestätigt. Das Abschalten belohnter Werbung verhindert nicht das Spielen.", "Für Google-Dienste gelten Googles Bedingungen und Datenschutzpraktiken. Einzelheiten zu Werbung, Einwilligungsoptionen und Datenverarbeitung stehen in unserer [[privacy]].", "Spielinhalte und Aktualisierungen", "Das Spiel einschließlich Software, Gestaltung, Texten, Grafiken und Ton gehört uns oder ist an uns lizenziert, ausgenommen Materialien und Dienste Dritter, und ist durch geltendes Recht zum geistigen Eigentum geschützt. Diese Bedingungen übertragen Ihnen kein Eigentum.", "Wir können Teile des Spiels aus Wartungs-, Sicherheits-, rechtlichen oder betrieblichen Gründen aktualisieren, ändern, aussetzen oder einstellen. Wir garantieren weder die ständige Verfügbarkeit aller Funktionen noch den Erhalt des Spielfortschritts. Ihre Rechte nach geltendem Verbraucherschutzrecht bleiben unberührt.", "Haftungsausschluss und Haftung", "Soweit gesetzlich zulässig, wird das Spiel „nach Verfügbarkeit“ bereitgestellt; ein unterbrechungs- oder fehlerfreier Betrieb wird nicht garantiert. Diese Bedingungen schließen weder Verbraucherrechte noch Haftung aus oder beschränken sie, soweit dies gesetzlich unzulässig ist. Soweit das Gesetz es erlaubt, haften wir nicht für mittelbare oder Folgeschäden aus der Nutzung des Spiels.", "Änderungen dieser Bedingungen", "Wir können diese Bedingungen aktualisieren, wenn sich das Spiel oder geltende Anforderungen ändern. Die neue Fassung wird unter dieser Adresse mit einem geänderten Gültigkeitsdatum veröffentlicht. Änderungen gelten ab dem angegebenen Datum, vorbehaltlich gesetzlich erforderlicher Mitteilungen oder Einwilligungen. Die weitere Nutzung nach einer Aktualisierung bedeutet im gesetzlich zulässigen Umfang die Annahme der geänderten Bedingungen.", "Anwendbares Recht und Kontakt", "Diese Bedingungen unterliegen dem geltenden Recht. Für Verbraucher gelten weiterhin die zwingenden Schutzvorschriften und Rechte ihres Wohnsitzlandes, einschließlich der Regeln über die gerichtliche Zuständigkeit bei Streitigkeiten.", "Bei Fragen zu diesen Bedingungen wenden Sie sich an Brici Robert unter [[email]]."]}, "labels": {"en": {"privacy": "Privacy Policy", "terms": "Terms of Service", "by": "by Sticky Joystick Arcade", "operated": "Sticky Joystick Arcade • Operated by Brici Robert", "language": "Page language", "skip": "Skip to main content", "gp": "Google’s Privacy Policy", "ads": "Google’s advertising information"}, "fr": {"privacy": "Politique de confidentialité", "terms": "Conditions d’utilisation", "by": "par Sticky Joystick Arcade", "operated": "Sticky Joystick Arcade • Exploité par Brici Robert", "language": "Langue de la page", "skip": "Aller au contenu principal", "gp": "les règles de confidentialité de Google", "ads": "les informations de Google sur la publicité"}, "es": {"privacy": "Política de privacidad", "terms": "Condiciones de servicio", "by": "por Sticky Joystick Arcade", "operated": "Sticky Joystick Arcade • Operado por Brici Robert", "language": "Idioma de la página", "skip": "Ir al contenido principal", "gp": "la Política de Privacidad de Google", "ads": "la información de Google sobre publicidad"}, "pt": {"privacy": "Política de Privacidade", "terms": "Termos de Serviço", "by": "por Sticky Joystick Arcade", "operated": "Sticky Joystick Arcade • Operado por Brici Robert", "language": "Idioma da página", "skip": "Ir para o conteúdo principal", "gp": "a Política de Privacidade da Google", "ads": "as informações da Google sobre publicidade"}, "de": {"privacy": "Datenschutzerklärung", "terms": "Nutzungsbedingungen", "by": "von Sticky Joystick Arcade", "operated": "Sticky Joystick Arcade • Betrieben von Brici Robert", "language": "Seitensprache", "skip": "Zum Hauptinhalt springen", "gp": "Googles Datenschutzerklärung", "ads": "Googles Informationen zu Werbung"}}, "links": {"email": "mailto:robert.brici@outlook.com", "googleprivacy": "https://policies.google.com/privacy", "googleads": "https://www.google.com/policies/technologies/ads/", "privacy": "https://robertbrici.github.io/Space-Arcade-Retro-Shooter-Privacy-Policy/"}, "kind": "terms"}</script><script>
+(() => {
+  'use strict';
+  const payload = JSON.parse(document.getElementById('translations').textContent);
+  const nodes = [...document.querySelectorAll('[data-translate-index]')];
+  const select = document.getElementById('language-select');
+  const safe = (s) => String(s).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+  const render = (value, lang) => safe(value).replace(/\[\[(email|googleprivacy|googleads|privacy)\]\]/g, (_,key) => {
+    const names = {email:'robert.brici@outlook.com',googleprivacy:payload.labels[lang].gp,googleads:payload.labels[lang].ads,privacy:payload.labels[lang].privacy};
+    const external = key==='googleprivacy'||key==='googleads';
+    return '<a href="'+safe(payload.links[key])+'"'+(external?' target="_blank" rel="noopener noreferrer"':'')+'>'+safe(names[key])+'</a>';
+  });
+  function applyLanguage(lang) {
+    if (!Object.hasOwn(payload.content,lang)) lang='en';
+    const l=payload.labels[lang];
+    nodes.forEach((node,i) => {node.innerHTML=lang==='en'?payload.content.en[i]:render(payload.content[lang][i],lang);});
+    document.documentElement.lang=lang;
+    document.title='Space-Arcade-Retro-Shooter — '+l[payload.kind];
+    document.getElementById('page-title').textContent=l[payload.kind];
+    document.getElementById('by-label').textContent=l.by;
+    document.getElementById('footer-operator').textContent=l.operated;
+    document.getElementById('language-label').textContent=l.language;
+    document.getElementById('skip-link').textContent=l.skip;
+    select.value=lang;
+    try {localStorage.setItem('space-arcade-legal-language',lang);} catch(e) {}
+  }
+  select.addEventListener('change', () => applyLanguage(select.value));
+  let initial='en';
+  try { const saved=localStorage.getItem('space-arcade-legal-language'); if (Object.hasOwn(payload.content,saved)) initial=saved; } catch(e) {}
+  applyLanguage(initial);
+})();
+</script></body>
 </html>
